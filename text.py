@@ -14,13 +14,12 @@ def countword()->int:
         if i == 0:
             word =line.rstrip("\n")
             word = word.lower() 
+     
             i = 1
             count = count + 1
         else:
             word1 = line.split()
-            #print(sen)
             for i in word1:
-                
                 word1_new = revword(i)
                 if word1_new == word:
                     count = count +1
